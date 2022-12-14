@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">
+        <span class="desktop-screen">How do you like food?</span>
+        <span class="mobile-screen">Food! Food!</span>
+      </h1>
+    </header>
+    <p class="page-description" id="description">
+      Quick and fun survey about food. <span class="webScreen">More specifically a survey on your relationship with  food.</span> Please take the time to read and answer each question.
+    </p>
+    <form id="survey-form">
+      <div class="form-content-section1">        
+        <div class="quoteBox2">
+          <p class="quotes">
+            "Food is our common ground, a universal experience."
+            <cite>- James Beard</cite>
+          </p>
+          <div class="quoteLine"></div>
+          <p class="quotes">
+            <span class="webScreen">
+              “I am not a glutton - I am an explorer of food.”
+              <cite>- Erma Bombeck</cite>
+            </span>
+          </p>
+        </div>
+        <fieldset class="form-fieldset">
+          <legend>Personal</legend>
+          <label for="todays-date" class="input-label">
+            Today's Date:
+            <input type="date" id="todays-date">
+          </label>
+          <div class="question-set">
+            <label for="name" id="name-label" class="input-label">
+              First Name:
+              <input type="text" id="name" name="firstName" size="10" placeholder="First Name" />
+            </label>            
+            <label for="last-name" class="input-label">
+              Last Name:
+              <input type="text" id="last-name" name="lastName" size="10" placeholder="Last Name"/>
+            </label>
+          </div>
+          <div class="question-set">
+            <label for="number" id="number-label" class="input-label">
+              Age: 
+              <input type="number" id="number" min="12" max="120">
+            </label>
+            <label for="gender" class="input-label">
+              Gender:
+              <select id="gender">
+                <option value="">Select Your Gender:</option>
+                <option value="Woman">Woman</option>
+                <option value="Man">Man</option>
+                <option value="Non-binary">Non-binary</option>
+                <option value="Other">Other</option>
+                <option value="not-Say">Prefer not to say</option>
+              </select>
+            </label>
+          </div>
+          <div>
+            <label for="email" id="email-label" class="input-label">
+              Email:
+              <input type="email" id="email" required>
+            </label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="form-content-section2">
+        ><fieldset>
+          <legend>Location</legend>
+          
+        </fieldset>
+      </div>
+      <div class="form-content-section3"></div>
+      <div class="form-content-section4"></div>
+      <div class="form-content-section5"></div>
+    </form>
+  </body>
+</html>
