@@ -193,3 +193,8 @@ select {
   display: block;
 }
 
+.question-set1 {
+  display: flex;
+  flex-flow: column flex-end
+}
+
