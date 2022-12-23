@@ -1,0 +1,8 @@
+.laptop-screen,
+.mobile-screen {
+  display: none;
+}
+
+.tablet-screen {
+  display: block;
+}

@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Raleway:wght@300;400;500;600&display=swap');
+
+/*General styles*/
+body {
+  background-color: #e8e8e9;
+  margin: 0;
+  font-family: 'Raleway', Arial, sans-serif, system-ui, -apple-system, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.mobile-screen {
+  display: none;
+}
+
+/*font-styling for elements*/
+h1,
+.quotes,
+legend,
+.input-label {
+  font-family: 'Oswald', system-ui, -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*Header styles*/
+header {
+  margin: 0;
+  padding: 0;
+  background-color: #f4c95d;
+  width: 100%;
+  border-bottom: solid #dd7230 6px;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 2.8rem;
+  margin: 0;
+  text-align: center;
+  padding: 0;
+  color: #854d27;
+}
+
+.page-description {  
+  font-size: .875rem;
+  margin: 0 30px 34px 30px;
+  padding: 0;
+  text-align: center;
+  color: #040f0f;
+  font-weight: 400;
+}
+
+/*Form styling*/
+#survey-form {
+  max-width: 100%;
+  margin: 10px 30px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-row-gap: 32px;
+  grid-template-areas: 
+    "form-content-section1",
+    "form-content-section2",
+    "form-content-section3",
+    "form-content-section4",
+    "form-content-section5";
+  
+}
+
+/*Section styling*/
+.form-content-section1 {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-areas: 
+    'quoteBox2',
+    'form-fieldset';
+  column-gap: 80px;
+}
+
+.form-content-section2,
+.form-content-section3,
+.form-content-section4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    'quote-Image-Container',
+    'form-fieldset';
+}
+
+/*Quote-image-container*/
+.quote-Image-Container {
+  border: solid 4px #dd7230;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2%;
+  margin-top: 4%;
+}
+
+/*Quote Line*/
+.quoteLine {
+  margin: 16px auto;
+  width: 40%;
+  border-top: solid 4px #e8e8e9;
+  padding: 0;
+}
+
+/*Quotes and Quote box*/
+.quoteBox,
+.quoteBox2,
+.quoteBox3 {
+  width: 100%;
+  margin: 0;
+  height: 220px;
+  text-align: center;
+  overflow-wrap: break-word;
+  
+}
+
+.quoteBox {
+  background-color: #f4c95d;
+  color: #040f0f;
+  border: solid #854d27 4px;
+  padding: 10px 0 0;
+}
+
+.quoteBox2 { 
+  background-color: #854d27;
+  color: #e8e8e9;
+  border: solid #f4c95d 4px;
+  padding: 10px 0 0;
+  margin: 0;
+}
+
+.quotes,
+.quotes2,
+.quotes3 {
+  font-size: .875rem;
+  margin: 0;
+  padding: 0;
+}
+
+cite {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/*Image and Image Box*/
+.imageBox2 {
+  padding: 0;
+  border: ridge 4px #dd7230;
+  width: 25%;
+  margin: 0;
+  height: 194px;
+}
+
+.survey-image {
+  width: 100%;
+  margin: 0;
+  height: 100%;
+}
+
+/*Fieldset container*/
+.form-fieldset {
+  border: solid 2px #040f0f;
+  padding: 0;
+  margin: 0;
+  width: 80%;
+}
+
+legend {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: underline;
+  color: #dd7230;
+}
+
+/*input text and selection style*/
+.question-set {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: flex-start;
+  margin: 0 0 6px 0;
+}
+
+.input-label {
+  font-size: 1.08rem;
+  color: #040f0f;
+  font-weight: 400;
+  margin: 0;
+}
+
+.input-label,
+input,
+select {
+  display: block;
+}
+
