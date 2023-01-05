@@ -1,0 +1,21 @@
+.laptop-tablet-screen {
+  display: none;
+}
+
+.mobile-screen {
+  display: block;
+}
+
+header {
+  width: 80%;  
+}
+
+h1 {
+  font-size: 1.65rem;
+}
+
+.page-description {
+  font-size: .654rem;
+  margin: 0;
+}
+

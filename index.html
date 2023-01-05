@@ -7,8 +7,9 @@
 
     <title>Survey Form</title>
 
-    <link rel="stylesheet" href="./style/styles.css">
-    <link rel="stylesheet" media="screen and (max-width: 788px)">
+    <link rel="stylesheet" media="all" href="./styles/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 788px)" href="./styles/tablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 440px)" href="./styles/mobile.css">
   </head>
   <body>
     <header>
@@ -18,25 +19,11 @@
       </h1>
     </header>
     <p class="page-description" id="description">
-      Quick and fun survey about food. <span class="laptop-screen">More specifically a survey on your relationship with food.</span> Please take the time to read and answer each question.
+      Quick and fun survey about food. <span class="laptop-screen">More specifically a survey on your relationship with food. Please take the time to read and answer each question.</span>
     </p>
     <form id="survey-form">
-      <div class="form-content-section1">        
-        <div class="quoteBox2 laptop-tablet-screen">
-          <p class="quotes tablet-screen">
-            "Food is our common ground, a universal experience."
-            <cite>- James Beard</cite>
-          </p>
-          <div class="quoteLine"></div>
-          <p class="quotes laptop-screen">
-              “I am not a glutton - I am an explorer of food.”
-              <cite>- Erma Bombeck</cite>
-          </p>
-          <div class="quoteLine laptop-screen"></div>
-          <p></p>
-        </div>
+      <div class="form-content-section1">
         <fieldset class="form-fieldset">
-          <legend>Personal</legend>
           <label for="todays-date" class="input-label">
             Today's Date:
             <input type="date" id="todays-date">
@@ -64,7 +51,7 @@
                 <option value="Man">Man</option>
                 <option value="Non-binary">Non-binary</option>
                 <option value="Other">Other</option>
-                <option value="Prefer-not-to-say">Prefer not to say</option>
+                <option value="Prefer-not-to-say">Not Say</option>
               </select>
             </label>
           </div>
@@ -76,8 +63,15 @@
           </div>
         </fieldset>
       </div>
+      <div class="quoteBox laptop-tablet-screen">
+        <p class="quotes">
+          “A recipe has no soul. You, as the cook, must bring the soul to the recipe.”  <cite>- thomas Keller</cite>
+        </p>
+        <div class="quoteLine"></div>
+      </div>
       <div class="form-content-section2">
-
+        <div></div>
+        <fieldset></fieldset>
       </div>
       <div class="form-content-section3"></div>
       <div class="form-content-section4"></div>

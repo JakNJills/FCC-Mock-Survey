@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Raleway:wght@300;400;500;600&display=swap');
+
+/*General styles*/
+body {
+  background-color: var(--bgcolor2), #854d27;
+  margin: 0;
+  font-family: 'Raleway', Arial, sans-serif, system-ui, -apple-system, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  --bgcolor1: #f4c95d;
+  --bgcolor2: #854d27;
+  --bgcolor3: #0f0404;
+  --bgcolor4: #e8e8e9;
+  --color1: #040f0f;
+  --color2: #e8e8e9;
+  --color3: #854d27;
+}
+
+.mobile-screen {
+  display: none;
+}
+
+
+/*font-styling for elements*/
+h1,
+.quotes,
+legend,
+.input-label {
+  font-family: 'Oswald', system-ui, -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*Header styles*/
+header {
+  margin: 0;
+  padding: 0;
+  background-color: #f4c95d;
+  width: 99.5%;
+  border-bottom: solid #dd7230 6px;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 2.8rem;
+  margin: 0;
+  text-align: center;
+  padding: 0;
+  color: #854d27;
+}
+
+.page-description {  
+  font-size: .875rem;
+  padding: 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+/*Form styling*/
+
+form {
+  width: 88%;
+}
