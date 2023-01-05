@@ -6,9 +6,6 @@
   display: block;
 }
 
-header {
-  width: 80%;  
-}
 
 h1 {
   font-size: 1.65rem;
@@ -17,5 +14,9 @@ h1 {
 .page-description {
   font-size: .654rem;
   margin: 0;
+}
+
+form {
+  width: 100%;
 }
 
