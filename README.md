@@ -43,9 +43,15 @@ Building a functioning survey form
 ## My process
 
   -- Build Header section
-    -Add h1 element and label id to complete first bullet of challange
-  -- Add p elemnt to complete next challenge.
-  -- Add style to both elements.  
+    --- Add h1 element and label id to complete first bullet of challange
+    --- Add p elemnt to complete next challenge.
+    --- Add style to both elements.  
+  -- Build Form Element
+    --- Add divs  containers
+      ---- Add fieldsets
+        ---- Add label, input, and p elemnts for survey questions and answers
+      ---- Add quote containers
+        ---- Add different quotes for each screen view
 
 ### Built with
 

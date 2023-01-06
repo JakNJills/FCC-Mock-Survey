@@ -8,16 +8,17 @@ body {
   width: 100%;
 }
 
+.tablet-screen,
 .mobile-screen {
   display: none;
 }
-
 
 /*font-styling for elements*/
 h1,
 .quotes,
 legend,
-.input-label {
+.label-question,
+.survey-question {
   font-family: 'Oswald', system-ui, -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -29,15 +30,16 @@ header {
   color: #e8e8e9;
   width: 100%;
   border-bottom: solid #0f0404 6px;
+  color: #e8e8e9;
+  margin-bottom: 70px;
 }
 
 h1 {
   font-weight: 600;
   font-size: 2.8rem;
-  margin: 0;
+  margin: 8px 0 0 0;
   text-align: center;
   padding: 0;
-  color: #e8e8e9;
 }
 
 .page-description {  
@@ -45,31 +47,38 @@ h1 {
   padding: 0;
   text-align: center;
   font-weight: 600;
-  margin: 0 0 24px 0;
+  margin: 0;
 }
 
 /*Form styling*/
 
 form {
-  width: 68%;
-  margin: 26px auto;
+  width: 78%;
+  margin: 0 auto;
   background-color:  #854d27;
 }
 
-fieldset {
+.empty {
+  height: 50px;
+}
+
+/*fieldset styles*/
+.form-fieldset {
   border: none;
-  width: 80%;
-  margin: 10px auto;
+  width: 74%;
+  margin: 0 auto;
   background-color: #e8e8e9;
-  border: ridge 6px #f4c85d;
+  border: ridge 3px #f4c85d;
+  padding: 4px;
 }
 
 .legend {
   text-align: center;
-  font-size: 1.11rem;
+  font-size: 1.321rem;
+  font-weight: 600;
   text-align: center;
-  margin: 2px 0 12px 0;
-  color: #854d27;
+  margin: 0 0 12px 0;
+  color: #dd7230;
 }
 
 input[type="text"],
@@ -81,22 +90,41 @@ select {
   display: block;
 }
 
+label,
+.survey-question {
+  font-size: 1.21rem;
+  letter-spacing: .5px;
+  margin-bottom: 4px;
+}
+
 .question-set {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
 
-.quoteBox {
-  width: 52%;
+/*quote section*/
+.quote-container-div1,
+.quote-container-div2,
+.quote-container-div3 {
+  width: 70%;
+  margin: 40px auto;
+  padding: 10px;
+}
+
+.quote-container-div1 {
   background-color: #f4c85d;
   color: #854d27;
-  margin: 10px auto;
+}
+
+.quote-container-div2 {
+  background-color: #0f0404;
+  color: #f4c85d;
 }
 
 .quotes {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.19rem;
   margin: 4px 0;
   font-weight: 300;
 }
@@ -107,9 +135,29 @@ cite {
   font-weight: 500;
 }
 
-.quote-line {
+.quote-line1,
+.quote-line2 {
   margin: 0 auto;
   width: 40%;
-  border-top: solid 4px #e8e8e9;
   padding: 0;
+}
+
+.quote-line1 {
+  border-top: solid 4px #0f0404;
+}
+
+.quote-line2 {
+  border-top: solid 4px #e8e8e9;
+}
+
+/*Submit Button*/
+.submit-button {
+  width: 76%;
+  font-size: 1.54rem;
+  background-color: #0f0404;
+  color: #f4c85d;
+  border-radius: 10px;
+  height: 18%;
+  text-align: center;
+  margin: 10px auto;
 }

@@ -17,34 +17,64 @@
         <span class="laptop-tablet-screen">Do you like food?</span>
         <span class="mobile-screen">Food! Food! Food!</span>
       </h1>
+      <p class="page-description" id="description">
+        Quick and sometimes silly survey about food. <span class="laptop-screen">More specifically a survey on your relationship with food. Please take the time to read and answer each question.</span>
+      </p>
     </header>
-    <p class="page-description" id="description">
-      Quick and fun survey about food. <span class="laptop-screen">More specifically a survey on your relationship with food. Please take the time to read and answer each question.</span>
-    </p>
     <form id="survey-form">
-      <div class="form-content-section1">
+      <div class="empty"></div>
+      <div class="form-div">
         <fieldset class="form-fieldset">
-          <h3 class="legend">Personal</h3>
-          <label for="todays-date" class="input-label">
-            Today's Date:
-            <input type="date" id="todays-date">
-          </label>
+          <h3 class="legend">Personal<span class="funny-descript">The only serious questions...I think</span></h3>
           <div class="question-set">
-            <label for="name" id="name-label" class="input-label">
+            <label for="today-date" class="label-question">
+              Today's Date:
+              <input type="date" id="today-date>
+            </label>
+            <label class="label-question" for="dropdown"> Pick the Continent you live on:
+              <select class="input-style" name="living" id="dropdown" required>
+                <option>Select Continent</option>
+                <option value="Asia">
+                  Asia
+                </option>
+                <option value="Africa"> 
+                  Africa
+                </option>
+                <option value="North America">
+                  North America
+                </option>
+                <option value="South America">
+                  South America
+                </option>
+                <option value="Australia">
+                  Australia
+                </option>
+                <option value="Europe">
+                  Europe
+                </option>
+                <option value="Antartica">
+                  Antartica
+                </option>
+                <option value="Pacific-other">Pacific or Other Islands</option>
+              </select>
+            </label>
+          </div>          
+          <div class="question-set">
+            <label for="name" id="name-label" class="label-question">
               First Name:
               <input type="text" id="name" name="firstName" size="10" placeholder="First Name" />
             </label>            
-            <label for="last-name" class="input-label">
+            <label for="last-name" class="label-question">
               Last Name:
               <input type="text" id="last-name" name="lastName" size="10" placeholder="Last Name"/>
             </label>
           </div>
           <div class="question-set">
-            <label for="number" id="number-label" class="input-label">
-              Age: 
+            <label for="number" id="number-label" class="label-question">
+              How many laps around the sun(Age): 
               <input type="number" id="number" min="12" max="120">
             </label>
-            <label for="gender" class="input-label">
+            <label for="gender" class="label-question">
               Gender:
               <select id="gender">
                 <option value="">Select</option>
@@ -57,62 +87,195 @@
             </label>
           </div>
           <div>
-            <label for="email" id="email-label" class="input-label">
+            <label for="email" id="email-label" class="label-question">
               Email:
               <input type="email" id="email" required>
             </label>
           </div>
         </fieldset>
+        <div class="quote-container-div1">
+          <p class="quotes laptop-screen">
+            “A recipe has no soul. You, as the cook, must bring the soul to the recipe.”
+            <cite>- Thomas Keller</cite>
+          </p>
+          <p class="quotes tablet-screen">
+            "Ask not what you can do for your country. Ask what’s for lunch.”
+            <cite>- Orson Welles</cite>
+          </p>
+          <p class="quotes mobile-screen">
+            “Life is uncertain. Eat dessert first.”
+            <cite>- Ernestine Ulmer</cite>
+          </p>
+          <div class="quote-line1"></div>
+        </div>
       </div>
-      <div class="quoteBox">
-        <p class="quotes laptop-tablet-screen">
-          “A recipe has no soul. You, as the cook, must bring the soul to the recipe.”  <cite>- Thomas Keller</cite>
-        </p>
-        <p class="quotes mobile-screen">
-
-        </p>
-        <div class="quote-line"></div>
-      </div>
-      <div class="form-content-section2">
-        <fieldset>
-          <h3 class="legend">Location</h3>
-          <p class="survey-questions">Which continent do you currently live on?</p>
+      <div class="form-div">
+        <fieldset class="form-fieldset">
+          <p class="legend">Eating Habits</p>
+          <p class="survey-question">Do you prefer to make your own meals or let the professionals do it?</p>
+          <label fpr="homecooked">
+            <input type="radio" name="prepared" id="homecooked">
+            Homecooked Meals for Me
+          </label>
           <label>
-            <input type="radio" id="asia" name="currentLocation" value="asis">
+            <input type="radio">
+            Restaurant Chefs PLS!
+          </label>
+          <p class="survey-question">Who do you share the wonders of food with on a daily to a semi-daily basis?</p>
+          <label>
+            <input type="checkbox">
+            Parents
+          </label>
+          <label>
+            <input type="checkbox">
+            Children
+          </label>
+          <lbale>
+            <input type="checkbox">
+            Siblings
+          </lbale>
+          <label>
+            <input type="checkBox">
+            Other relatives
+          </label>
+          <label>
+            <input type="checkbox">
+            Friends
+          </label>
+          <p class="survey-question">At what time(s) of day do you like to eat?</p>
+          <label class="radio-label">
+            <input type="radio" class="radio-style" value="Breakfast" name="eat-time">
+              When the sun rises<span class="serious">(Breakfast Time)</span>
+            </label>
+            <label class="radio-label">
+              <input type="radio" value="Brunch" name="eat-time" class="radio-style">
+              Brunch Time
+            </label>
+            <label class="radio-label">
+              <input type="radio" value="Lunch" name="eat-time" class="radio-style">
+              Lunch Time
+            </label>
+            <label class="radio-label">
+              <input type="radio" value="Dinner" name="eat-time" class="radio-style">
+              Dinner Time
+            </label>
+            <label class="radio-label">
+              <input type="radio" value="Late-Night" name="eat-time" class="radio-style">
+              Late Night
+            </label>
+        </fieldset>
+        <div class="quote-container-div2">
+          <p class="quotes laptop-screen">
+            “The best comfort food will always be greens, cornbread, and fried chicken.”
+            <cite>- Maya Angelou</cite>
+          </p>
+          <p class="quotes tablet-screen">
+            "I am not a glutton - I am an explorer of food."
+            <cite>- Erma Bombeck</cite>
+          </p>
+          <p class="quotes mobile-screen">
+            "Food is our common ground.”
+            <cite>- James Beard</cite>
+          </p>
+          <div class="quote-line2"></div>
+        </div>
+      </div>
+      <div class="form-div">
+        <fieldset class="form-fieldset">
+          <h3 class="legend">Travels</h3>
+          <p class="survey-question">
+            Have you traveled outside of your home country?
+          </p>
+          <label for="q1-a1">
+            <input type="radio" id="q1-a1">
+            Yes
+          </label>
+          <label>
+            <input type="radio">
+            No
+          </label>
+          <p class="survey-question">Which of these places have you visited?</p>
+          <label>
+            <input type="checkbox" id="asia" name="visit" value="asis">
             Asia
           </label>
           <label>
-            <input type="radio" id="south-america" name="currentLocation" value="south-america">
+            <input type="checkbox" id="south-america" name="currentLocation" value="south-america">
             South America
           </label>
           <label>
-            <input type="radio">
+            <input type="checkbox">
             Europe
           </label>
           <label>
-            <input type="radio">
+            <input type="checkbox">
             Africa
           </label>
           <label>
-            <input type="radio">
+            <input type="checkbox">
             North America
           </label>
           <label>
-            <input type="radio">
+            <input type="checkbox">
             Anartica
           </label>
           <label>
-            <input type="radio">
+            <input type="checkbox">
             Central America
           </label>
           <label>
+            <input type="checkbox">
+            Pacific & Other Islands
+          </label>
+          <p class="survey-question">Did you try the local cuisine?</p>
+          <label>
             <input type="radio">
-            Pacific Islands
+            Of COURSE I DID!
+          </label>
+          <label>
+            <input type="radio">
+            I only ordered basic safe foods
+          </label>
+          <label>
+            <input type="radio">
+            Why when I bring the best snacks
+          </label>
+          <p class="survey-question">On a Scale of 1(Terrible) to 10(Amazing): How would you rate the ocal cuisines?</p>
+          <label>
+            <input type="radio">
+            Yes
+          </label>
+          <label>
+            <input type="radio">
+            No
           </label>
         </fieldset>
+        <div class="quote-container-div1">
+          <p class="quotes laptop-screen">
+            "We elves try to stick to the foun main food groups: Candy, Candy Canes, Candy Corn, and Syrup."
+            <cite>- Buddy the Elf</cite>
+          </p>
+          <p class="quotes tablet-screen">
+            "We all eat, and it would be a sad waste of opportunity to eat badly."
+            <cite>- Anna thomas</cite>
+          </p>
+          <p class="quotes mobile-screen">
+            "Laughter is brightest in the place where food is.”
+            <cite>- Irish Proverb</cite>
+          </p>
+          <div class="quote-line1"></div>
+        </div>
       </div>
-      <div class="form-content-section3"></div>
-      <div class="form-content-section4"></div>
+      <div class="form-div">
+        <fieldset class="form-fieldset">
+          <p class="survey-question">
+            Please share your favorite experience with food: <span class="explain">(It can be a cooking story, eating adventure, or recipe or whatever you want to share about how amazing food is)</span>
+          </p>
+          <textarea name="bio" rows="6" cols="34" placeholder="My favorite memory is the first time I made Natchitoches Meatpies while visiting a friend..."></textarea>
+        </fieldset>
+        <input id="submit" class="submit-button" type="submit" value="Submit" />
+      </div>
+      <div class="empty"></div>
     </form>
   </body>
 </html>
