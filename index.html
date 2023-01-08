@@ -73,13 +73,14 @@
             </label>
             <div class="blank"></div>
           </div>
-          <div class="question-set">
+          <div class="question-set qs3">
             <label for="number" id="number-label" class="label-question">
               Age: 
               <input type="number" id="number" min="12" max="120" placeholder="54">
             </label>
+            <div class="blank"></div>
             <label for="gender" class="label-question">
-              Gender:
+              Gender:              
               <select id="gender">
                 <option value="">Select</option>
                 <option value="Woman">Woman</option>
@@ -89,12 +90,15 @@
                 <option value="Prefer-not-to-say">Not Say</option>
               </select>
             </label>
+            <div class="blank"></div>
+            <div class="blank"></div>
           </div>
           <div>
-            <label for="email" id="email-label" class="label-question">
+            <label for="email" id="email-label">
               Email:
-              <input type="email" id="email" placeholder="example-email@fake.com" required>
-            </label>
+            </label>  
+            <input type="email" id="email" placeholder="example-email@fake.com" required>
+            
           </div>
         </fieldset>
         <div class="quote-container-div1">
@@ -120,17 +124,17 @@
             <span class="funny-descript">(I Eat. You Eat. WE ALL EAT!)</span>
           </h3>
           <p class="survey-question">Do you prefer to make your own meals or let the professionals do it?</p>
-          <label fpr="homecooked">
-            <input type="radio" name="prepared" id="homecooked">
+          <label fpr="q1-a1">
+            <input type="radio" name="prepared" id="q1-a1" value="homecook">
             Homecooked Meals for Me
           </label>
-          <label>
-            <input type="radio">
+          <label for="q1-a2">
+            <input type="radio" name="prepare" id="q1-a2" value="restaurant">
             Restaurant Chefs PLS!
           </label>
           <p class="survey-question">Who do you share the wonders of food with on a daily to a semi-daily basis?</p>
-          <label>
-            ><input type="checkBox">
+          <label for="q2-a1">
+            <input type="checkBox" id="q1-a1">
             Me, Myself, and I
           </label>
           <label>

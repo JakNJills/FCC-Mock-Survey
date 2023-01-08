@@ -18,7 +18,8 @@ h1,
 .quotes,
 legend,
 .label-question,
-.survey-question {
+.survey-question,
+#email-label {
   font-family: 'Oswald', system-ui, -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -101,6 +102,12 @@ form {
 
 .qs2 {
   align-content: flex-start;
+  padding: 0 2px 0 2px;
+}
+
+.qs3 {
+  align-content: center;
+  padding: 0 6px 0 8px;
 }
 
 input[type="text"],
@@ -113,10 +120,15 @@ select {
 }
 
 label,
-.survey-question {
+.survey-question,
+#email-label {
   font-size: 1.15rem;
   letter-spacing: .3px;
   margin-bottom: 4px;
+}
+
+input[type="email"] {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
 .label-question,
@@ -142,16 +154,12 @@ input:placeholder-shown {
 .blank {
   height: 68px;
   display: inline;
-  width: 28px;
+  width: 20px;
   border: 1px black solid;
-  margin: 0 0 0 -10px;
+  margin: 0;
   visibility: hidden;
 }
 
-#name-label {
-  margin-right: 20px;
-  padding-left: 8px;
-}
 /*quote section*/
 .quote-container-div1,
 .quote-container-div2,
