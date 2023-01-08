@@ -52,6 +52,7 @@ Building a functioning survey form
         ---- Add label, input, and p elemnts for survey questions and answers
       ---- Add quote containers
         ---- Add different quotes for each screen view
+      ---- Added styling and empty divs to help align items
 
 ### Built with
 
@@ -61,10 +62,10 @@ Building a functioning survey form
 
 ### Useful resources
 
-- [MDN](https://www.mdn.com) - This helped me for obvious reasons. it is developers guide to all. I needed a better understanding of how girds and flexboxes worked. This sited was great for a theoratical understading
+- [MDN](https://developer.mozilla.org/en-US/) - This helped me for obvious reasons. it is developers guide to all. I needed a better understanding of how flexboxes worked.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Jazzy B](https://www.your-site.com)
+- Twitter - [@jaknjills](https://www.twitter.com/yourusername)

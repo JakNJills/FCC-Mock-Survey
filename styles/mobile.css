@@ -20,3 +20,7 @@ form {
   width: 100%;
 }
 
+.question-set {
+  display: inline-block;
+}
+

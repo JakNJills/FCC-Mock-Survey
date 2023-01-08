@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Raleway:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
 
 /*General styles*/
 body {
@@ -87,6 +87,7 @@ form {
   font-size: .754rem;
   font-family: 'Raleway', Arial;
   color: #0f0404;
+  font-weight: 600;
 }
 
 .question-set {
@@ -119,12 +120,12 @@ select {
   display: block;
 }
 
-label,
+.label-questions,
 .survey-question,
 #email-label {
   font-size: 1.15rem;
-  letter-spacing: .3px;
-  margin-bottom: 4px;
+  letter-spacing: .2px;
+  margin-bottom: 10px;
 }
 
 input[type="email"] {
@@ -149,6 +150,18 @@ input[type="email"],
 
 input:placeholder-shown {
   color: black;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.answer {
+  font-size: .949rem;
+  color: #854d27;
+  font-weight: 500;
+  margin-bottom: 4px;
 }
 
 .blank {
@@ -181,14 +194,14 @@ input:placeholder-shown {
 
 .quotes {
   text-align: center;
-  font-size: 1.19rem;
+  font-size: 1.01rem;
   margin: 4px 0;
   font-weight: 300;
 }
 
 cite {
   display: block;
-  font-size: .977rem;
+  font-size: .947rem;
   font-weight: 500;
 }
 
@@ -216,5 +229,11 @@ cite {
   border-radius: 10px;
   height: 18%;
   text-align: center;
-  margin: 10px auto;
+  margin: 40px 0 10px 86px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  color: black;
+  background-color: #f4c85d;
 }
