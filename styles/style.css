@@ -37,7 +37,7 @@ header {
 h1 {
   font-weight: 600;
   font-size: 2.8rem;
-  margin: 8px 0 0 0;
+  margin: 0 0 8px 0;
   text-align: center;
   padding: 0;
 }
@@ -78,7 +78,29 @@ form {
   font-weight: 600;
   text-align: center;
   margin: 0 0 12px 0;
-  color: #dd7230;
+  color: #854d27;
+}
+
+.funny-descript {
+  display: block;
+  font-size: .754rem;
+  font-family: 'Raleway', Arial;
+  color: #0f0404;
+}
+
+.question-set {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.qs1 {  
+  align-content: space-around;
+  align-items: center;
+}
+
+.qs2 {
+  align-content: flex-start;
 }
 
 input[type="text"],
@@ -92,17 +114,44 @@ select {
 
 label,
 .survey-question {
-  font-size: 1.21rem;
-  letter-spacing: .5px;
+  font-size: 1.15rem;
+  letter-spacing: .3px;
   margin-bottom: 4px;
 }
 
-.question-set {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+.label-question,
+.survey-question {
+  text-align: center;
 }
 
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+#gender,
+#dropdown {
+  border: solid 2px #854d27;
+  background-color: #f4c85d;
+  color: #0f0404;
+}
+
+input:placeholder-shown {
+  color: black;
+}
+
+.blank {
+  height: 68px;
+  display: inline;
+  width: 28px;
+  border: 1px black solid;
+  margin: 0 0 0 -10px;
+  visibility: hidden;
+}
+
+#name-label {
+  margin-right: 20px;
+  padding-left: 8px;
+}
 /*quote section*/
 .quote-container-div1,
 .quote-container-div2,

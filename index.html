@@ -25,15 +25,18 @@
       <div class="empty"></div>
       <div class="form-div">
         <fieldset class="form-fieldset">
-          <h3 class="legend">Personal<span class="funny-descript">The only serious questions...I think</span></h3>
-          <div class="question-set">
+          <h3 class="legend">
+            Personal
+            <span class="funny-descript">(The only serious questions...I think)</span>
+          </h3>
+          <div class="question-set qs1">
             <label for="today-date" class="label-question">
               Today's Date:
-              <input type="date" id="today-date>
+              <input type="date" id="today-date">
             </label>
-            <label class="label-question" for="dropdown"> Pick the Continent you live on:
+            <label class="label-question" for="dropdown"> Current Continent:
               <select class="input-style" name="living" id="dropdown" required>
-                <option>Select Continent</option>
+                <option>Select Your Continent</option>
                 <option value="Asia">
                   Asia
                 </option>
@@ -59,20 +62,21 @@
               </select>
             </label>
           </div>          
-          <div class="question-set">
+          <div class="question-set qs2">
             <label for="name" id="name-label" class="label-question">
               First Name:
-              <input type="text" id="name" name="firstName" size="10" placeholder="First Name" />
-            </label>            
+              <input type="text" id="name" name="firstName" size="11" placeholder="First Name" />
+            </label>
             <label for="last-name" class="label-question">
               Last Name:
-              <input type="text" id="last-name" name="lastName" size="10" placeholder="Last Name"/>
+              <input type="text" id="last-name" name="lastName" size="11" placeholder="Last Name"/>
             </label>
+            <div class="blank"></div>
           </div>
           <div class="question-set">
             <label for="number" id="number-label" class="label-question">
-              How many laps around the sun(Age): 
-              <input type="number" id="number" min="12" max="120">
+              Age: 
+              <input type="number" id="number" min="12" max="120" placeholder="54">
             </label>
             <label for="gender" class="label-question">
               Gender:
@@ -89,14 +93,14 @@
           <div>
             <label for="email" id="email-label" class="label-question">
               Email:
-              <input type="email" id="email" required>
+              <input type="email" id="email" placeholder="example-email@fake.com" required>
             </label>
           </div>
         </fieldset>
         <div class="quote-container-div1">
           <p class="quotes laptop-screen">
-            “A recipe has no soul. You, as the cook, must bring the soul to the recipe.”
-            <cite>- Thomas Keller</cite>
+            "We elves try to stick to the foun main food groups: Candy, Candy Canes, Candy Corn, and Syrup."
+            <cite>- Buddy the Elf</cite>
           </p>
           <p class="quotes tablet-screen">
             "Ask not what you can do for your country. Ask what’s for lunch.”
@@ -111,7 +115,10 @@
       </div>
       <div class="form-div">
         <fieldset class="form-fieldset">
-          <p class="legend">Eating Habits</p>
+          <h3 class="legend">
+            Eating Habits 
+            <span class="funny-descript">(I Eat. You Eat. WE ALL EAT!)</span>
+          </h3>
           <p class="survey-question">Do you prefer to make your own meals or let the professionals do it?</p>
           <label fpr="homecooked">
             <input type="radio" name="prepared" id="homecooked">
@@ -123,16 +130,20 @@
           </label>
           <p class="survey-question">Who do you share the wonders of food with on a daily to a semi-daily basis?</p>
           <label>
+            ><input type="checkBox">
+            Me, Myself, and I
+          </label>
+          <label>
             <input type="checkbox">
             Parents
           </label>
           <label>
             <input type="checkbox">
-            Children
+            Mini Humans you care for(Kids)
           </label>
           <lbale>
             <input type="checkbox">
-            Siblings
+            Siblings(Your Rivals)
           </lbale>
           <label>
             <input type="checkBox">
@@ -141,6 +152,14 @@
           <label>
             <input type="checkbox">
             Friends
+          </label>
+          <label>
+            <input type="checkbox">
+            Pets
+          </label>
+          <label>
+            <input type="checkbox">
+            Random old lady from APT 32B
           </label>
           <p class="survey-question">At what time(s) of day do you like to eat?</p>
           <label class="radio-label">
@@ -182,7 +201,11 @@
       </div>
       <div class="form-div">
         <fieldset class="form-fieldset">
-          <h3 class="legend">Travels</h3>
+          <h3 class="legend">
+            Travels 
+            <span class="funny-descript">(Deloren, Teleport, or Portkey)</span>
+            <span class="funny-descript">(Planes, Trains, and Automobiles)</span>
+          </h3>
           <p class="survey-question">
             Have you traveled outside of your home country?
           </p>
@@ -252,8 +275,8 @@
         </fieldset>
         <div class="quote-container-div1">
           <p class="quotes laptop-screen">
-            "We elves try to stick to the foun main food groups: Candy, Candy Canes, Candy Corn, and Syrup."
-            <cite>- Buddy the Elf</cite>
+            "I’m pretty sure that eating chocolate keeps wrinkles away because I have never seen a 10-year-old with a Hershey bar and crows feet.""
+            <cite>- Amy Neftzger</cite>
           </p>
           <p class="quotes tablet-screen">
             "We all eat, and it would be a sad waste of opportunity to eat badly."
@@ -268,6 +291,15 @@
       </div>
       <div class="form-div">
         <fieldset class="form-fieldset">
+          <p class="survey-set">The most important question on this survey. <span>Does pineapple belong on pizza?</span></p>
+          <label>
+            <input type="radio">
+            Yes
+          </label>
+          <label>
+            <input type="checkbox">
+            Heck Yes
+          </label>
           <p class="survey-question">
             Please share your favorite experience with food: <span class="explain">(It can be a cooking story, eating adventure, or recipe or whatever you want to share about how amazing food is)</span>
           </p>
