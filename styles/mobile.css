@@ -6,21 +6,42 @@
   display: block;
 }
 
-
-h1 {
-  font-size: 1.65rem;
-}
-
-.page-description {
-  font-size: .654rem;
-  margin: 0;
-}
-
+header,
 form {
   width: 100%;
 }
 
-.question-set {
-  display: inline-block;
+header {
+  margin-bottom: 10px;
 }
 
+h1 {
+  font-size: 1.65rem;
+  margin: 0;
+  text-align: left;
+}
+
+.page-description {
+  font-size: .62rem;
+  margin: 0;
+  text-align: left;
+}
+
+form,
+fieldset {
+  margin: 0;
+}
+
+.empty {
+  height: 10px;
+}
+
+.question-set {
+  display: inline-block;
+  margin: 0;
+}
+
+.funny-descript,
+.numOfAnswer {
+  font-size: .653rem;
+}

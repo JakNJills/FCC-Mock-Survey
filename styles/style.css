@@ -52,7 +52,6 @@ h1 {
 }
 
 /*Form styling*/
-
 form {
   width: 78%;
   margin: 0 auto;
@@ -61,6 +60,15 @@ form {
 
 .empty {
   height: 50px;
+}
+
+.blank {
+  height: 68px;
+  display: inline;
+  width: 20px;
+  border: 1px black solid;
+  margin: 0;
+  visibility: hidden;
 }
 
 /*fieldset styles*/
@@ -90,6 +98,7 @@ form {
   font-weight: 600;
 }
 
+/*basic info containers*/
 .question-set {
   display: flex;
   flex-direction: row;
@@ -99,6 +108,7 @@ form {
 .qs1 {  
   align-content: space-around;
   align-items: center;
+  margin-bottom: 14px;
 }
 
 .qs2 {
@@ -108,9 +118,9 @@ form {
 
 .qs3 {
   align-content: center;
-  padding: 0 6px 0 8px;
 }
 
+/*questions and input areas*/
 input[type="text"],
 input[type="number"],
 input[type="date"],
@@ -128,13 +138,23 @@ select {
   margin-bottom: 10px;
 }
 
+.label-question,
+.survey-question {
+  text-align: center;
+}
+
+.numOfAnswer {
+  display: block;
+  font-size: .872rem;
+  font-family: 'Raleway', sans-serif;
+}
+
 input[type="email"] {
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
-.label-question,
-.survey-question {
-  text-align: center;
+#email-label {
+  margin-left: 44px;
 }
 
 input[type="text"],
@@ -160,17 +180,49 @@ input[type="checkbox"] {
 .answer {
   font-size: .949rem;
   color: #854d27;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 4px;
 }
 
-.blank {
-  height: 68px;
-  display: inline;
-  width: 20px;
-  border: 1px black solid;
-  margin: 0;
-  visibility: hidden;
+#rating {
+  color: #854d27;
+  border: solid 1px #0f0404;
+  margin-left: 36px;
+  font-size: .949rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+option.small-answer {
+  font-size: .599rem;
+}
+
+.bonus-question {
+  display: block;
+  font-size: 1.5rem;
+  color: #854d27;
+  text-decoration: underline;
+}
+
+.bonus-answer {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #0f0404;
+  margin-bottom: 4px;
+}
+
+.bonus-answer1 {
+  margin-right: 2px;
+  color: red;
+  font-size: 1rem;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+textarea {
+  margin-top: 8px;
+  margin-left: 64px;
 }
 
 /*quote section*/
@@ -229,7 +281,7 @@ cite {
   border-radius: 10px;
   height: 18%;
   text-align: center;
-  margin: 40px 0 10px 86px;
+  margin: 50px 0 0 86px;
   cursor: pointer;
 }
 
