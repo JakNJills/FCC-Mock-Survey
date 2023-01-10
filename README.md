@@ -53,6 +53,8 @@ Building a functioning survey form
       ---- Add quote containers
         ---- Add different quotes for each screen view
       ---- Added styling and empty divs to help align items
+  -- Finished with the submit button
+  -- Added styling for mobile and tablet view
 
 ### Built with
 
@@ -63,7 +65,7 @@ Building a functioning survey form
 ### Useful resources
 
 - [MDN](https://developer.mozilla.org/en-US/) - This helped me for obvious reasons. it is developers guide to all. I needed a better understanding of how flexboxes worked.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [w3school](https://www.example.com) - This is an another amazing website that I encourage beginner or self taught devs to explore. It gives great explanations and examples.
 
 ## Author
 

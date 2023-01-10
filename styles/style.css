@@ -17,9 +17,8 @@ body {
 h1,
 .quotes,
 legend,
-.label-question,
-.survey-question,
-#email-label {
+.label-questions,
+.survey-question {
   font-family: 'Oswald', system-ui, -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -62,15 +61,6 @@ form {
   height: 50px;
 }
 
-.blank {
-  height: 68px;
-  display: inline;
-  width: 20px;
-  border: 1px black solid;
-  margin: 0;
-  visibility: hidden;
-}
-
 /*fieldset styles*/
 .form-fieldset {
   border: none;
@@ -83,7 +73,7 @@ form {
 
 .legend {
   text-align: center;
-  font-size: 1.321rem;
+  font-size: 1.521rem;
   font-weight: 600;
   text-align: center;
   margin: 0 0 12px 0;
@@ -92,69 +82,33 @@ form {
 
 .funny-descript {
   display: block;
-  font-size: .754rem;
+  font-size: .854rem;
   font-family: 'Raleway', Arial;
   color: #0f0404;
   font-weight: 600;
 }
 
-/*basic info containers*/
-.question-set {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.qs1 {  
-  align-content: space-around;
-  align-items: center;
-  margin-bottom: 14px;
-}
-
-.qs2 {
-  align-content: flex-start;
-  padding: 0 2px 0 2px;
-}
-
-.qs3 {
-  align-content: center;
-}
 
 /*questions and input areas*/
-input[type="text"],
-input[type="number"],
-input[type="date"],
-input[type="email"],
-label,
-select {
-  display: block;
-}
-
 .label-questions,
-.survey-question,
-#email-label {
-  font-size: 1.15rem;
-  letter-spacing: .2px;
-  margin-bottom: 10px;
+.survey-question {
+  font-size: 1.25rem;
 }
 
-.label-question,
+.label-questions {
+  margin-bottom: 8px;
+  margin-left: 50px;
+}
+
 .survey-question {
   text-align: center;
+  margin-bottom: 22px;
 }
 
 .numOfAnswer {
   display: block;
-  font-size: .872rem;
+  font-size: .972rem;
   font-family: 'Raleway', sans-serif;
-}
-
-input[type="email"] {
-  font-family: 'Raleway', Arial, Helvetica, sans-serif;
-}
-
-#email-label {
-  margin-left: 44px;
 }
 
 input[type="text"],
@@ -163,9 +117,27 @@ input[type="date"],
 input[type="email"],
 #gender,
 #dropdown {
+  display: block;
+  font-size: 1.18rem;
   border: solid 2px #854d27;
   background-color: #f4c85d;
   color: #0f0404;
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+  height: 1.18rem;
+  width: 80%;
+}
+
+#dropdown,
+#gender,
+input[type="date"] {
+  height: 1.32rem;
+  width: 81%;
 }
 
 input:placeholder-shown {
@@ -175,23 +147,33 @@ input:placeholder-shown {
 input[type="radio"],
 input[type="checkbox"] {
   cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  margin: 0;
+  margin-right: 18px;
+  margin-bottom: 9px;
 }
 
 .answer {
-  font-size: .949rem;
+  font-size: 1.01rem;
   color: #854d27;
   font-weight: 600;
-  margin-bottom: 4px;
+  display: flex;
+  align-items: flex-start;
+  justify-items: flex-start;
+  margin-left: 16px;
 }
 
 #rating {
   color: #854d27;
   border: solid 1px #0f0404;
-  margin-left: 36px;
+  margin-left: 58px;
   font-size: .949rem;
   font-weight: 600;
   margin-bottom: 4px;
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  height: 1.72rem;
+  width: 75%;
 }
 
 option.small-answer {
@@ -210,6 +192,9 @@ option.small-answer {
   font-weight: 500;
   color: #0f0404;
   margin-bottom: 4px;
+  display: flex;
+  align-content: flex-start;
+  
 }
 
 .bonus-answer1 {
@@ -218,6 +203,7 @@ option.small-answer {
   font-size: 1rem;
   margin-bottom: 4px;
   font-weight: 600;
+  text-align: right;
 }
 
 textarea {

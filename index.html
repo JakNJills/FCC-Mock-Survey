@@ -27,76 +27,68 @@
         <fieldset class="form-fieldset">
           <h3 class="legend">
             Basic Information
-            <span class="funny-descript">(The only serious questions...I think)</span>
-            <span class="numOfAnswer">(Enter your basic information. this section is required.)</span>
-          </h3>          
-          <div class="question-set qs1">
-            <label for="today-date" class="label-question">
-              Today's Date:
-              <input type="date" id="today-date" required>
-            </label>
-            <label class="label-question" for="dropdown"> Current Continent:
-              <select name="living" id="dropdown" required>
-                <option>Select Your Continent</option>
-                <option value="Asia">
-                  Asia
-                </option>
-                <option value="Africa"> 
-                  Africa
-                </option>
-                <option value="North America">
-                  North America
-                </option>
-                <option value="South America">
-                  South America
-                </option>
-                <option value="Australia">
-                  Australia
-                </option>
-                <option value="Europe">
-                  Europe
-                </option>
-                <option value="Antartica">
-                  Antartica
-                </option>
-                <option value="Pacific-other">Pacific or Other Islands</option>
-              </select>
-            </label>
-          </div>          
-          <div class="question-set qs2">
-            <label for="name" id="name-label" class="label-question">
-              First Name:
-              <input type="text" id="name" name="firstName" size="11" placeholder="First Name" />
-            </label>
-            <label for="last-name" class="label-question">
-              Last Name:
-              <input type="text" id="last-name" name="lastName" size="11" placeholder="Last Name" required/>
-            </label>
-            <div class="blank"></div>
-          </div>
-          <div class="question-set qs3">
-            <label for="gender" class="label-question">
-              Gender:              
-              <select id="gender" name="gender" required>
-                <option value="">Select Gender</option>
-                <option value="Woman">Woman</option>
-                <option value="Man">Man</option>
-                <option value="Non-binary">Non-binary</option>
-                <option value="Other">Other</option>
-                <option value="Prefer-not-to-say">Prefer not to say</option>
-              </select>
-            </label>
-            <label for="number" id="number-label" class="label-question">
-              Age: 
-              <input type="number" id="number" min="12" max="120" placeholder="54" required>
-            </label>
-            <div class="blank"></div>
-            <div class="blank"></div>
-          </div>
-          <label for="email" id="email-label">
-            Email:              
-            <input type="email" id="email" placeholder="example-email@fake.com" size="16" required>
+            <span class="numOfAnswer">(Enter your basic information.)</span>
+          </h3>
+          <label for="today-date" class="label-questions">
+            Today's Date:            
           </label>
+            <input type="date" id="today-date" class="form-input" required>
+          <label class="label-questions" for="dropdown"> Current Continent:
+          </label>
+            <select name="living" id="dropdown" class="form-input" required>
+              <option>Select Your Continent</option>
+              <option value="Asia">
+                Asia
+              </option>
+              <option value="Africa"> 
+                Africa
+              </option>
+              <option value="North America">
+                North America
+              </option>
+              <option value="South America">
+                South America
+              </option>
+              <option value="Australia">
+                Australia
+              </option>
+              <option value="Europe">
+                Europe
+              </option>
+              <option value="Antartica">
+                Antartica
+              </option>
+              <option value="Pacific-other">
+                Pacific or Other Islands
+              </option>
+            </select>
+          <label for="name" id="name-label" class="label-questions">
+            First Name:
+          </label>
+            <input type="text" id="name" name="firstName" size="11" placeholder="First Name" />
+          <label for="last-name" class="label-questions">
+            Last Name:
+          </label>
+            <input type="text" id="last-name" name="lastName" size="11" placeholder="Last Name" required/>
+          <label for="number" id="number-label" class="label-questions">
+            Age:
+          </label>
+            <input type="number" id="number" min="12" max="120" placeholder="54" required>
+          <label for="gender" class="label-questions">
+            Gender:
+          </label>              
+            <select id="gender" name="gender" required>
+              <option value="">Select Gender</option>
+              <option value="Woman">Woman</option>
+              <option value="Man">Man</option>
+              <option value="Non-binary">Non-binary</option>
+              <option value="Other">Other</option>
+              <option value="Prefer-not-to-say">Prefer not to say</option>
+            </select>
+          <label for="email" id="email-label" class="label-questions">
+            Email:
+          </label>                        
+            <input type="email" id="email" placeholder="example-email@fake.com" size="16" required>
         </fieldset>
         <div class="quote-container-div1">
           <p class="quotes laptop-screen">
@@ -138,34 +130,34 @@
           </p>
             <label for="q2-a1" class="answer">
               <input type="radio" value="Breakfast" name="eat-time" id="q2-a1" >
-                When the sun rises<span class="serious">(Breakfast Time)</span>
-            </label>
+              When the sun rises<span class="funny-descript">(Breakfast Time)</span>
+            </label>      
             <label for="q2-a2" class="answer">
-              <input type="radio" value="Brunch" name="eat-time" id="q2-a2">
+              <input type="radio" value="Brunch" name="eat-time" i="q2-a2">
               Brunch Time
             </label>
-            <label for="q2-a3" class="answer">
+            <label for="q2-a3" class="answer"> 
               <input type="radio" id="q2-a3" value="Lunch" name="eat-time">
-              Lunch Time
+                Lunch Time
             </label>
-            <label for="q2-a4" class="answer">
-              <input type="radio" id="q2-a4" value="Dinner" name="eat-time">
-              Dinner Time
+            <label for="q2-a4" class="answer">  
+              <input type="radio" id="q2-a4" value="Dinner" name="eat-time">              
+                Dinner Time
             </label>
             <label for="q2-a5" class="answer">
               <input type="radio" id="q2-a5" value="Late-Night" name="eat-time">
-              Late Night
+                Late Night
             </label>
             <label for="q2-a6" class="answer">
-              <input type="radio" name="eat-time" id="q2-a6" value="snacks-only">
-              Snacking all day like a pro
+              <input type="radio" name="eat-time" id="q2-a6" value="snacks-only">              
+                Snacking all day like a pro
             </label>
           <p class="survey-question">
             3) What is your go to snack foods?
             <span class="numOfAnswer">(Select one or more answers)</span>
           </p>
-            <label for="q3-a1" class="answer">
-              <input id="q3-a1" name="snack-time" value="candy" type="checkbox" />
+            <label for="q3-a1" class="answer">  
+              <input id="q3-a1" name="snack-time" value="candy" type="checkbox" />              
               Candy
             </label>
             <label for="q3-a2" class="answer">
@@ -177,16 +169,20 @@
               Chips(Crunch time)
             </label>
             <label for="q3-a4" class="answer">
-              <input id="q3-a4" type="checkbox" value="fruit" name="snack-time" />
-              Fruit/Vegetables
+              <input id="q3-a4" value="fruit" name="snack-time" type="checkbox">
+              fruits
             </label>
             <label for="q3-a5" class="answer">
               <input id="q3-a5" type="checkbox" value="snack-cakes" name="snack-time" />
               Snack Cakes
             </label>
             <label for="q3-a6" class="answer">
-              <input id="q3-a6" class="answer" value="cookies" type="checkbox">
+              <input id="q3-a6" value="cookies" type="checkbox" name="snack-time">
               Cookies
+            </label>
+            <label for="q3-a7" class="answer">
+              <input id="q3-a7" value="vegetables" type="checkbox" name="snack-time">
+              Vegetables
             </label>
           <p class="survey-question">
             4) Who do you share the wonders of food with on a daily to a semi-daily basis?
@@ -196,18 +192,18 @@
               <input type="checkBox" id="q4-a1" name="eat-with" value="alone">
               Me, Myself, and I
             </label>
-            <label for="q4-a2" class="answer">
-              <input type="checkbox" id="q4-a2"
-              name="eat-with" value="parents">
+            <label for="q4-a2" class="answer">              
+              <input type="checkbox" id="q4-a2" name="eat-with" value="parents">
               Parents
             </label>
             <label for="q4-a3" class="answer" >
               <input type="checkbox" id="q4-a3"value="kids" name="eat-with">
-              Mini Humans you care for(Kids)
+              Mini Humans you care for
+              <span class="funny-desrcipt">(Kids)</span>
             </label>
             <label for="q4-a4" class="answer">
               <input type="checkbox" id="q4-a4" name="eat-with" value="siblings">
-              Siblings(Your Rivals)
+              Siblings<span class="funny-descript">(Your Rivals)</span>
             </label>
             <label for="q4-a5" class="answer">
               <input type="checkBox" id="q4-a5" name="eat-with" value="other-relatives">
