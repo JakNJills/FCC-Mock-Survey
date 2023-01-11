@@ -1,4 +1,6 @@
-.laptop-tablet-screen {
+.laptop-tablet-screen,
+.laptop-screen,
+.tablet-screen {
   display: none;
 }
 
@@ -6,37 +8,39 @@
   display: block;
 }
 
-header,
-form {
-  width: 100%;
-}
-
-header {
-  margin-bottom: 10px;
-}
-
 h1 {
-  font-size: 1.65rem;
-  margin: 0;
-  text-align: left;
+  font-size: 1.7rem;
 }
 
 .page-description {
-  font-size: .62rem;
+  font-size: 1rem;
+}
+
+.legend {
+  font-size: 1rem;
+}
+
+.label-questions,
+.survey-question,
+.quotes {
+  font-size: .836rem;
+}
+
+.funny-descript {
+  font-size: .732rem;
+}
+
+.answer,
+.bonus-answer {
+  font-size: .765rem;
+}
+
+.label-questions,
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="number"],
+textarea {
   margin: 0;
-  text-align: left;
-}
 
-form,
-fieldset {
-  margin: 0;
-}
-
-.empty {
-  height: 10px;
-}
-
-.funny-descript,
-.numOfAnswer {
-  font-size: .653rem;
 }
