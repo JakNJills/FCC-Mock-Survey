@@ -10,29 +10,35 @@
 
 h1 {
   font-size: 1.7rem;
+  font-weight: 500;
 }
 
 .page-description {
   font-size: 1rem;
+  font-weight: 400;
 }
 
 .legend {
   font-size: 1rem;
+  font-weight: 500;
 }
 
 .label-questions,
 .survey-question,
 .quotes {
   font-size: .836rem;
+  font-weight: 400;
 }
 
 .funny-descript {
   font-size: .732rem;
+  font-weight: 300;
 }
 
 .answer,
-.bonus-answer {
+.numOfAnswer {
   font-size: .765rem;
+  font-weight: 300;
 }
 
 .label-questions,
@@ -40,7 +46,25 @@ input[type="text"],
 input[type="date"],
 input[type="email"],
 input[type="number"],
-textarea {
+.answer,
+#gender,
+#dropdown,
+#rating,
+.submit-button {
   margin: 0;
+}
 
+form {
+  width: 100%;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="number"],
+#rating,
+#dropdown,
+#gender {
+  height: .843rem;
+  width: 100%;
 }
