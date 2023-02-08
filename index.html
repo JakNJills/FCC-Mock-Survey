@@ -8,8 +8,8 @@
     <title>Survey Form</title>
 
     <link rel="stylesheet" media="all" href="./styles/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 788px)" href="./styles/tablet.css">
-    <link rel="stylesheet" media="screen and (max-width: 440px)" href="./styles/mobile.css">
+    <link rel="stylesheet" media="(max-width: 768px)" href="./styles/tablet.css">
+    <link rel="stylesheet" media="(max-width: 440px)" href="./styles/mobile.css">
   </head>
   <body>
     <header>
@@ -18,7 +18,7 @@
         <span class="mobile-screen">Food! Food! Food!</span>
       </h1>
       <p class="page-description" id="description">
-        A quick and silly survey about food. <span class="laptop-screen">More specifically a survey on your relationship with food. Please take the time to read and answer each question.</span>
+        <span class="laptop-screen">A quick and silly survey about food. More specifically a survey on your relationship with food.</span> Please take the time to read and answer each question.
       </p>
     </header>
     <form id="survey-form">
@@ -27,15 +27,15 @@
         <fieldset class="form-fieldset">
           <h3 class="legend">
             Basic Information
-            <span class="numOfAnswer">(Enter your basic information.)</span>
+            <span class="numOfAnswer">(This section is required.)</span>
           </h3>
           <label for="today-date" class="label-questions">
             Today's Date:            
           </label>
-            <input type="date" id="today-date" class="form-input" required>
-          <label class="label-questions" for="dropdown"> Current Continent:
+            <input type="date" id="today-date" class="form-input" name="current-date" required>
+          <label class="label-questions" for="dropdown"> Which Continent do you Live on:
           </label>
-            <select name="living" id="dropdown" class="form-input" required>
+            <select name="current-continent" id="dropdown" class="form-input" required>
               <option>Select Your Continent</option>
               <option value="Asia">
                 Asia
@@ -65,7 +65,7 @@
           <label for="name" id="name-label" class="label-questions">
             First Name:
           </label>
-            <input type="text" id="name" name="firstName" size="11" placeholder="First Name" />
+            <input type="text" id="name" name="firstName" size="11" placeholder="First Name" required />
           <label for="last-name" class="label-questions">
             Last Name:
           </label>
@@ -73,7 +73,7 @@
           <label for="number" id="number-label" class="label-questions">
             Age:
           </label>
-            <input type="number" id="number" min="12" max="120" placeholder="54" required>
+            <input name="userAge" type="number" id="number" min="12" max="120" placeholder="54" required>
           <label for="gender" class="label-questions">
             Gender:
           </label>              
@@ -88,7 +88,7 @@
           <label for="email" id="email-label" class="label-questions">
             Email:
           </label>                        
-            <input type="email" id="email" placeholder="example-email@fake.com" size="16" required>
+            <input type="email" id="email" placeholder="example-email@fake.com" name="userEmail" size="16" required>
         </fieldset>
         <div class="quote-container-div1">
           <p class="quotes laptop-screen">
@@ -113,7 +113,7 @@
             <span class="funny-descript">(I Eat. You Eat. WE ALL EAT!)</span>
           </h3>
           <p class="survey-question">
-            1) Do you prefer to make your own meals or let the professionals do it?
+            1) Do you prefer to make your own meals or let the professionals handle it?
             <span class="numOfAnswer">(Select one answer)</span>
           </p>
             <label fpr="q1-a1" class="answer">
@@ -124,37 +124,49 @@
               <input type="radio" name="prepared" id="q1-a2" value="restaurant">
               Restaurant Chefs PLS!
             </label>
+            <label for="q1-a3" class="answer">
+              <input type="radio" name="prepared" id="q1-a3" value="both">
+              Why choose Just One
+            </label>
           <p class="survey-question">
             2) At what time(s) of the day do you like to eat?
             <span class="numOfAnswer">(Select one answer)</span>
           </p>
             <label for="q2-a1" class="answer">
-              <input type="radio" value="Breakfast" name="eat-time" id="q2-a1" >
-              When the sun rises<span class="funny-descript">(Breakfast Time)</span>
+              <input type="checkbox" value="Breakfast" name="eat-time" id="q2-a1" >
+              <span class="laptop-screen tablet-screen">
+                When the Sun Rises
+                <span class="funny-descript">
+                  (Breakfast Time)
+                </span>
+              </span>
+              <span class="mobile-screen">
+                Breakfast Time
+              </span>
             </label>      
             <label for="q2-a2" class="answer">
-              <input type="radio" value="Brunch" name="eat-time" i="q2-a2">
+              <input type="checkbox" value="Brunch" name="eat-time" id="q2-a2">
               Brunch Time
             </label>
             <label for="q2-a3" class="answer"> 
-              <input type="radio" id="q2-a3" value="Lunch" name="eat-time">
+              <input type="checkbox" id="q2-a3" value="Lunch" name="eat-time">
                 Lunch Time
             </label>
             <label for="q2-a4" class="answer">  
-              <input type="radio" id="q2-a4" value="Dinner" name="eat-time">              
+              <input type="checkbox" id="q2-a4" value="Dinner" name="eat-time">              
                 Dinner Time
             </label>
             <label for="q2-a5" class="answer">
-              <input type="radio" id="q2-a5" value="Late-Night" name="eat-time">
+              <input type="checkbox" id="q2-a5" value="Late-Night" name="eat-time">
                 Late Night
             </label>
             <label for="q2-a6" class="answer">
-              <input type="radio" name="eat-time" id="q2-a6" value="snacks-only">              
-                Snacking all day like a pro
+              <input type="checkbox" name="eat-time" id="q2-a6" value="snacks-only">              
+                Snacks All Day
             </label>
           <p class="survey-question">
-            3) What is your go to snack foods?
-            <span class="numOfAnswer">(Select one or more answers)</span>
+            3) What is your go to snack(s)?
+            <span class="numOfAnswer">(Select up to 3  answers)</span>
           </p>
             <label for="q3-a1" class="answer">  
               <input id="q3-a1" name="snack-time" value="candy" type="checkbox" />              
@@ -170,22 +182,37 @@
             </label>
             <label for="q3-a4" class="answer">
               <input id="q3-a4" value="fruit" name="snack-time" type="checkbox">
-              fruits
+              Fruits
             </label>
             <label for="q3-a5" class="answer">
               <input id="q3-a5" type="checkbox" value="snack-cakes" name="snack-time" />
               Snack Cakes
+              <span class="funny-descript">
+                (ex: Twinkies, etc)
+              </span>
             </label>
             <label for="q3-a6" class="answer">
               <input id="q3-a6" value="cookies" type="checkbox" name="snack-time">
               Cookies
             </label>
             <label for="q3-a7" class="answer">
-              <input id="q3-a7" value="vegetables" type="checkbox" name="snack-time">
-              Vegetables
+              <input id="q3-a7" value="veggiesanddip" type="checkbox" name="snack-time">
+              Veggies and Dip
+            </label>
+            <label for="q3-a8" class="answer">
+              <input id="q3-a8" value="cheeseandcrackers" type="checkbox" name="snack-time">
+             Cheese and Crackers
+            </label>
+            <label for="q3-a9" class="answer">
+              <input id="q3-a9" value="chipsanddip" type="checkbox" name="snack-time">
+              Chips and Dip
+            </label>
+            <label for="q3-a10" class="answer">
+              <input id="q3-a19" value="icecream" name="checkbox" type="checkbox">
+              Ice Cream
             </label>
           <p class="survey-question">
-            4) Who do you share the wonders of food with on a daily to a semi-daily basis?
+            4) Who do you share the wonders of food with on a regular to semi-regular basis?
             <span class="numOfAnswer">(Select one or more answers)</span>
           </p>
             <label for="q4-a1" class="answer">
@@ -198,16 +225,21 @@
             </label>
             <label for="q4-a3" class="answer" >
               <input type="checkbox" id="q4-a3"value="kids" name="eat-with">
-              Mini Humans you care for
-              <span class="funny-desrcipt">(Kids)</span>
+              Mini Humans you Care for
+              <span class="funny-desrcipt">
+                (Kids)
+              </span>
             </label>
             <label for="q4-a4" class="answer">
               <input type="checkbox" id="q4-a4" name="eat-with" value="siblings">
-              Siblings<span class="funny-descript">(Your Rivals)</span>
+              Siblings
+              <span class="funny-descript">
+                (Your Rivals)
+              </span>
             </label>
             <label for="q4-a5" class="answer">
               <input type="checkBox" id="q4-a5" name="eat-with" value="other-relatives">
-              Other relatives
+              Other Relatives
             </label>
             <label for="q4-a6" class="answer">
               <input type="checkbox" id="q4-a6" name="eat-with" value="friends">
@@ -219,35 +251,40 @@
             </label>
             <label for="q4-a8" class="answer">
               <input type="checkbox" id="q4-a8" name="eat-with" value="old-lady">
-              Random old lady from APT 32B
+              Random Old Lady from APT 32B
             </label>
           <p class="survey-question">
-            5) Do you grow your on fruits, vegetables, or herbs?
-            <span class="numOfAnswer">(Select one answer)</span>
+            5) Do you grow your own food garden? 
+            <span class="funny-descript">
+              (Fruits, Vegetables, or Herbs?)
+            </span>
+            <span class="numOfAnswer">
+              (Select one answer)
+            </span>
           </p>
             <label for="q5-a1" class="answer">
               <input id="q5-a1" value="garden-fairy" name="garden" type="radio" >
-              I am a garden fairy
+              I am a Garden Fairy
             </label>
             <label for="q5-a2" class="answer">
               <input id="q5-a2" type="radio" name="garden" value="small-garden">
-              Small but florishing
+              Small but Flourishing
             </label>
             <label for="q5-a3" class="answer">
               <input id="q5-a3" name="garden" value="herbs-only" type="radio">
-              Herbs onlly
+              Small Herbs Only
             </label>
             <label for="q5-a4" class="answer">
               <input id="q5-a4" type="radio" name="garden" value="like-to">
-              No but I'd like to
+              No but I'd Like to
             </label>
             <label for="q5-a5" class="answer">
-              <input id="q5-a5" name="gardner" type="radio" value="dead-cactus">
-              I can't keep a cactus alive
+              <input id="q5-a5" name="garden" type="radio" value="dead-cactus">
+              A Cactus wouldn't Survive Me
             </label>
             <label for="q5-a6" class="answer">
               <input id="q5-a6" type="radio" value="eww-dirt" name="garden">
-              Eww dirt
+              Eww Dirt
             </label>
         </fieldset>
         <div class="quote-container-div2">
@@ -270,8 +307,12 @@
         <fieldset class="form-fieldset">
           <h3 class="legend">
             Travels 
-            <span class="funny-descript">(Deloren, Teleport, or Portkey)</span>
-            <span class="funny-descript">(Planes, Trains, and Automobiles)</span>
+            <span class="funny-descript">
+              (Deloren, Teleport, or Portkey)
+            </span>
+            <span class="funny-descript">
+              (Planes, Trains, and Automobiles)
+            </span>
           </h3>
           <p class="survey-question">
             6) Have you traveled outside of your home country? <span class="numOfAnswer">(Select one answer)</span>
@@ -285,7 +326,7 @@
               No
             </label>
           <p class="survey-question">
-            7) Which of these places have you visited?
+            7) Select the continent(s) you have visited?
             <span class="numOfAnswer">(Select one or more answers)</span>
           </p>
             <label for="q7-a1" class="answer">
@@ -321,15 +362,15 @@
               Pacific & Other Islands
             </label>
           <p class="survey-question">
-            8) Did you try the local cuisine?
+            8) Did You try the Local Cuisine?
             <span class="numOfAnswer">(Select one answer)</span>
           </p>
             <label for="q8-a1" class="answer">
-              <input type="radio" id="q8-a1" value="yes" name="local-suisine">
+              <input type="radio" id="q8-a1" value="yes" name="local-cuisine">
               Of COURSE I DID!
             </label>
             <label for="q8-a2" class="answer">
-              <input type="radio" id="q8-a2" name="local-cuisine" value="""safe-food">
+              <input type="radio" id="q8-a2" name="local-cuisine" value="safe-food">
               I only ordered basic safe foods
             </label>
             <label for="q8-a3" class="answer">
@@ -337,43 +378,47 @@
               No, I bring my own snacks
             </label>
           <p class="survey-question">
-            9) How would you rate the local cuisines?
+            9) How would You Rate the Local Cuisine?
             <span class="numOfAnswer">(Select one answer)</span>
           </p>
             <select id="rating" name="rating">
               <option>Select Rating</option>
               <option class="answer" value="1">
-                1 <span class="small-answer">(it should be consider torture)</span>
+                1<span class="small-answer">(NEVER AGAIN!!)</span>
               </option>
               <option value="2" class="answer">
-                2 <span class="small-answer">(Nope not a fan)</span>
+                2<span class="small-answer">(Not a fan)</span>
               </option>
               <option value="3" class="answer">
-                3 <span class="small-answer">(Eh, not the worst thing)</span>
+                3<span class="small-answer">(Passable, I guess)</span>
               </option>
               <option value="4" class="answer">
-                4 <span class="small-answer">(It was great)</span>
+                4<span class="small-answer">(It was Great)</span>
               </option>
               <option value="5" class="answer">
-                5 <span>(I fell in love)</span>
+                5<span>(I Fell in Love)</span>
               </option>
             </select>
           <p class="survey-question">
-            Do you subscribe to any food box services?
-            <span class="funny-descript">(example: UniversalYums, SnackCrate, Bokksu, etc)</span>
-            <span class="numOfAnswer">(Select one answer)</span>
+            Do You Subscribe to a Food Box Service?
+            <span class="funny-descript">
+              (example: UniversalYums, SnackCrate, etc)
+            </span>
+            <span class="numOfAnswer">
+              (Select one answer)
+            </span>
           </p>
             <label for="q10-a1" class="answer">
-              <input value="snack-conossieur" name="boxed-snack" id="q10-a1" type="radio">
-              I'm a snack conossieur
+              <input value="snack-connoisseur" name="boxed-snack" id="q10-a1" type="radio">
+              I'm a Snack Connoisseur
             </label>
             <label for="q10-a2" class="answer">
               <input value="thinking-about" name="boxed-snack" type="radio" id="q10-a2">
-              Thinking about it
+              Thinking About It
             </label>
             <label for="q10-a3" class="answer">
               <input value="local-only" name="boxed-snack" type="radio" id="q10-a4">
-              Nope local snacks only
+              Nope Local Snacks Only
             </label>
         </fieldset>
         <div class="quote-container-div1">
@@ -395,17 +440,19 @@
       <div class="form-div">
         <fieldset class="form-fieldset laptop-tablet-screen">
           <p class="survey-question">
-            The most important question on this survey. 
+            The most IMPORTANT question on this survey.
+            <span class="bonus-question">
+              Does Pineapple belong on pizza?
+            </span> 
             <span class="numOfAnswer">(Select one answer)</span>
-            <span class="bonus-question">Does pineapple belong on pizza?</span>
           </p>
-            <label for="bonusq-a1" class="bonus-answer">
-              <input type="radio" name="pineapple-pizza" value="yes" id="bonusq-a1">
-              Sure it's ok
-            </label>
             <label for="bonusq-a2" class="bonus-answer">
-              <input type="radio" id="bonusq-a2" value="all-pineapple" name="pineapple-pizza">
-              Give me all the Pineapples
+              <input type="radio" name="pineapple-pizza" value="sure" id="bonusq-a2">
+              Sure it's OK
+            </label>
+            <label for="bonusq-a3" class="bonus-answer">
+              <input type="radio" id="bonusq-a3" value="all-pineapple" name="pineapple-pizza">
+              Give me ALL the Pineapples
             </label>
             <label for="bonusq-a3" class="bonus-answer">
               <input type="radio" id="bonusq-a3" name="pineapple-pizza" value="not-terrible">
@@ -413,10 +460,12 @@
             </label>
             <label for="bonusq-a4" class="bonus-answer1">
               <input type="radio" id="bonusq-a4" name="pineapple-pizza" value="super-no">
-              If you come near me with fruit on a pizza... I will burn the entire kitchen down and ensure you can never make pineapple pizza ever again
+              If You Come Near Me With Fruit On A Pizza... I Will Burn THE ENTIRE KITCHEN DOWN
             </label>
           <p class="survey-question">
-            Please share your favorite experience with food: <span class="funny-descript">(It can be a cooking story, eating adventure, or recipe or whatever you want to share about how amazing food is)</span>
+            Please Share your Favorite Experience with Food: <span class="funny-descript">
+              (It can be a cooking story, eating adventure, or recipe or whatever you want to share about how amazing food is)
+            </span>
           </p>
             <textarea name="bio" rows="6" cols="30" placeholder="My favorite memory is the first time I made Natchitoches Meatpies while visiting a friend..."></textarea>
         </fieldset>

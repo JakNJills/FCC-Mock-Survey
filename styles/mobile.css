@@ -1,70 +1,75 @@
 .laptop-tablet-screen,
-.laptop-screen,
-.tablet-screen {
-  display: none;
-}
+  .laptop-screen,
+  .tablet-screen {
+    display: none;
+  }
 
-.mobile-screen {
-  display: block;
-}
+  .mobile-screen {
+    display: block;
+  }
 
-h1 {
-  font-size: 1.7rem;
-  font-weight: 500;
-}
+  header {
+    margin: 0 0 18px 0;
+  }
 
-.page-description {
-  font-size: 1rem;
-  font-weight: 400;
-}
+  h1 {
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
 
-.legend {
-  font-size: 1rem;
-  font-weight: 500;
-}
+  .page-description {
+    font-size: .87rem;
+    font-weight: 400;
+  }
 
-.label-questions,
-.survey-question,
-.quotes {
-  font-size: .836rem;
-  font-weight: 400;
-}
+  form {
+    width: 100%;
+    margin: 0;
+  }
 
-.funny-descript {
-  font-size: .732rem;
-  font-weight: 300;
-}
+  .empty {
+    height: 20px;
+  }
 
-.answer,
-.numOfAnswer {
-  font-size: .765rem;
-  font-weight: 300;
-}
+  .legend {
+    font-size: 1rem;
+    font-weight: 500;
+  }
 
-.label-questions,
-input[type="text"],
-input[type="date"],
-input[type="email"],
-input[type="number"],
-.answer,
-#gender,
-#dropdown,
-#rating,
-.submit-button {
-  margin: 0;
-}
+  .label-questions,
+  .survey-question,
+  .quotes {
+    font-size: .76rem;
+    font-weight: 400;
+    margin: 0;
+    text-align: left;
+  }
 
-form {
-  width: 100%;
-}
+  .funny-descript {
+    font-size: .732rem;
+    font-weight: 300;
+  }
 
-input[type="text"],
-input[type="date"],
-input[type="email"],
-input[type="number"],
-#rating,
-#dropdown,
-#gender {
-  height: .843rem;
-  width: 100%;
-}
+  .answer,
+  .numOfAnswer {
+    font-size: .71rem;
+    font-weight: 500;
+    margin: 10px 0;
+  }
+
+  .first .numOfAnswer {
+    display: inline;
+    margin: 0 5px;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="email"],
+  input[type="number"],
+  #rating,
+  #dropdown,
+  #gender {
+    height: .786rem;
+    width: 100%;
+    margin: 4px 0;
+  }

@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
 
+:root {
+  --color-scheme1: #f4c85d;
+  --color-scheme2: #854d27;
+  --color-scheme3: #0f0404;
+  --color-scheme4: #e8e8e9;
+}
+
 /*General styles*/
 body {
-  background-color: #f4c85d;
+  background-color: var(--color-scheme1);
   margin: 0;
   font-family: 'Raleway', Arial, sans-serif, system-ui, -apple-system, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-  width: 100%;
+  max-width: 100%;
 }
 
 .tablet-screen,
@@ -22,31 +29,35 @@ legend,
   font-family: 'Oswald', system-ui, -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.page-description,
+.legend,
+.funny-descript {
+  font-weight: 600;
+}
+
 /*Header styles*/
 header {
   margin: 0;
   padding: 0;
-  background-color: #854d27;
-  color: #e8e8e9;
-  width: 100%;
+  background-color: var(--color-scheme2);
+  color: var(--color-scheme4);
+  max-width: 100%;
   border-bottom: solid #0f0404 6px;
-  color: #e8e8e9;
   margin-bottom: 70px;
 }
 
 h1 {
-  font-weight: 600;
   font-size: 2.8rem;
   margin: 0 0 8px 0;
   text-align: center;
   padding: 0;
+  font-weight: 700;
 }
 
 .page-description {  
   font-size: .875rem;
   padding: 0;
   text-align: center;
-  font-weight: 600;
   margin: 0;
 }
 
@@ -54,7 +65,7 @@ h1 {
 form {
   width: 78%;
   margin: 0 auto;
-  background-color:  #854d27;
+  background-color: var(--color-scheme2);
 }
 
 .empty {
@@ -74,7 +85,6 @@ form {
 .legend {
   text-align: center;
   font-size: 1.521rem;
-  font-weight: 600;
   text-align: center;
   margin: 0 0 12px 0;
   color: #854d27;
@@ -85,7 +95,6 @@ form {
   font-size: .854rem;
   font-family: 'Raleway', Arial;
   color: #0f0404;
-  font-weight: 600;
 }
 
 
@@ -162,6 +171,8 @@ input[type="checkbox"] {
   align-items: flex-start;
   justify-items: flex-start;
   margin-left: 16px;
+  width: unset;
+  vertical-align: middle;
 }
 
 #rating {
@@ -213,8 +224,7 @@ textarea {
 
 /*quote section*/
 .quote-container-div1,
-.quote-container-div2,
-.quote-container-div3 {
+.quote-container-div2 {
   width: 70%;
   margin: 40px auto;
   padding: 10px;
@@ -226,7 +236,7 @@ textarea {
 }
 
 .quote-container-div2 {
-  background-color: #0f0404;
+  background-color: var(--color-scheme3);
   color: #f4c85d;
 }
 
@@ -262,8 +272,8 @@ cite {
 .submit-button {
   width: 76%;
   font-size: 1.54rem;
-  background-color: #0f0404;
-  color: #f4c85d;
+  background-color: var(--color-scheme3);
+  color: var(--color-scheme1);
   border-radius: 10px;
   height: 18%;
   text-align: center;
@@ -272,6 +282,6 @@ cite {
 }
 
 .submit-button:hover {
-  color: black;
-  background-color: #f4c85d;
+  color: var(--color-scheme3);
+  background-color: var(--color-scheme1);
 }
