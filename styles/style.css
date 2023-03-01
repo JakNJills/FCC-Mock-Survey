@@ -13,14 +13,10 @@ body {
   margin: 0;
   font-family: 'Raleway', Arial, sans-serif, system-ui, -apple-system, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
   max-width: 100%;
+  color: var(--color-scheme3);
 }
 
-.tablet-screen,
-.mobile-screen {
-  display: none;
-}
 
-/*font-styling for elements*/
 h1,
 .quotes,
 legend,
@@ -39,11 +35,10 @@ legend,
 header {
   margin: 0;
   padding: 0;
-  background-color: var(--color-scheme2);
-  color: var(--color-scheme4);
+  color: var(--color-scheme3);
   max-width: 100%;
-  border-bottom: solid #0f0404 6px;
-  margin-bottom: 70px;
+  border-bottom: solid var(--color-scheme2) 12px;
+  margin-bottom: 30px;
 }
 
 h1 {
@@ -63,23 +58,20 @@ h1 {
 
 /*Form styling*/
 form {
-  width: 78%;
+  width: 58%;
   margin: 0 auto;
-  background-color: var(--color-scheme2);
-}
-
-.empty {
-  height: 50px;
 }
 
 /*fieldset styles*/
 .form-fieldset {
-  border: none;
-  width: 74%;
+  border: solid 10px var(--color-scheme1);
+  width: 86%;
   margin: 0 auto;
-  background-color: #e8e8e9;
-  border: ridge 3px #f4c85d;
-  padding: 4px;
+  background-color: var(--color-scheme4);  
+}
+
+.form-fieldset:first-of-type {
+  margin-top: 28px;
 }
 
 .legend {
@@ -92,7 +84,7 @@ form {
 
 .funny-descript {
   display: block;
-  font-size: .854rem;
+  font-size: .84rem;
   font-family: 'Raleway', Arial;
   color: #0f0404;
 }
@@ -101,7 +93,7 @@ form {
 /*questions and input areas*/
 .label-questions,
 .survey-question {
-  font-size: 1.25rem;
+  font-size: 1.19rem;
 }
 
 .label-questions {
@@ -116,7 +108,7 @@ form {
 
 .numOfAnswer {
   display: block;
-  font-size: .972rem;
+  font-size: .932rem;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -128,9 +120,9 @@ input[type="email"],
 #dropdown {
   display: block;
   font-size: 1.18rem;
-  border: solid 2px #854d27;
-  background-color: #f4c85d;
-  color: #0f0404;
+  border: solid 2px var(--color-scheme3);
+  background-color: var(--color-scheme1);
+  color: var(--color-scheme3);
   margin-bottom: 10px;
   margin-left: 40px;
 }
@@ -138,15 +130,15 @@ input[type="email"],
 input[type="text"],
 input[type="number"],
 input[type="email"] {
-  height: 1.18rem;
+  height: 1.28rem;
   width: 80%;
 }
 
 #dropdown,
 #gender,
 input[type="date"] {
-  height: 1.32rem;
-  width: 81%;
+  height: 1.54rem;
+  width: 82.2%;
 }
 
 input:placeholder-shown {
@@ -218,26 +210,25 @@ option.small-answer {
 }
 
 textarea {
-  margin-top: 8px;
-  margin-left: 64px;
+  margin: auto;
 }
 
 /*quote section*/
 .quote-container-div1,
 .quote-container-div2 {
   width: 70%;
-  margin: 40px auto;
+  margin: 0 auto;
   padding: 10px;
 }
 
 .quote-container-div1 {
-  background-color: #f4c85d;
-  color: #854d27;
+  background-color: var(--color-scheme2);
+  color: var(--color-scheme1);
 }
 
 .quote-container-div2 {
   background-color: var(--color-scheme3);
-  color: #f4c85d;
+  color: var(--color-scheme1);
 }
 
 .quotes {

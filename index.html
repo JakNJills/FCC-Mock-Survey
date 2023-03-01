@@ -3,26 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" href="./style/tablet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Survey Form</title>
 
-    <link rel="stylesheet" media="all" href="./styles/style.css">
-    <link rel="stylesheet" media="(max-width: 768px)" href="./styles/tablet.css">
-    <link rel="stylesheet" media="(max-width: 440px)" href="./styles/mobile.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
   </head>
   <body>
     <header>
       <h1 id="title">
-        <span class="laptop-tablet-screen">Do you like food?</span>
-        <span class="mobile-screen">Food! Food! Food!</span>
+        Do you like food?
       </h1>
       <p class="page-description" id="description">
-        <span class="laptop-screen">A quick and silly survey about food. More specifically a survey on your relationship with food.</span> Please take the time to read and answer each question.
+       A quick and silly survey about food. More specifically a survey on your relationship with food. Please answer all questions below.
       </p>
     </header>
     <form id="survey-form">
-      <div class="empty"></div>
       <div class="form-div">
         <fieldset class="form-fieldset">
           <h3 class="legend">
@@ -91,18 +88,10 @@
             <input type="email" id="email" placeholder="example-email@fake.com" name="userEmail" size="16" required>
         </fieldset>
         <div class="quote-container-div1">
-          <p class="quotes laptop-screen">
+          <p class="quotes">
             "We elves try to stick to the foun main food groups: Candy, Candy Canes, Candy Corn, and Syrup."
             <cite>- Buddy the Elf</cite>
-          </p>
-          <p class="quotes tablet-screen">
-            "Ask not what you can do for your country. Ask what’s for lunch.”
-            <cite>- Orson Welles</cite>
-          </p>
-          <p class="quotes mobile-screen">
-            “Life is uncertain. Eat dessert first.”
-            <cite>- Ernestine Ulmer</cite>
-          </p>
+          </p>          
           <div class="quote-line1"></div>
         </div>
       </div>
@@ -116,54 +105,29 @@
             1) Do you prefer to make your own meals or let the professionals handle it?
             <span class="numOfAnswer">(Select one answer)</span>
           </p>
-            <label fpr="q1-a1" class="answer">
-              <input type="radio" name="prepared" id="q1-a1" value="homecook">
-              Homecooked Meals for Me
-            </label>
-            <label for="q1-a2" class="answer">
-              <input type="radio" name="prepared" id="q1-a2" value="restaurant">
-              Restaurant Chefs PLS!
-            </label>
-            <label for="q1-a3" class="answer">
-              <input type="radio" name="prepared" id="q1-a3" value="both">
-              Why choose Just One
-            </label>
+            
+            <label fpr="q1-a1" class="answer"><input type="radio" name="prepared" id="q1-a1" value="homecook"> Homecooked Meals for Me</label>
+            
+            <label for="q1-a2" class="answer"><input type="radio" name="prepared" id="q1-a2" value="restaurant"> Restaurant Chefs PLS!</label>
+            
+            <label for="q1-a3" class="answer"><input type="radio" name="prepared" id="q1-a3" value="both"> Why choose Just One</label>
+
           <p class="survey-question">
             2) At what time(s) of the day do you like to eat?
             <span class="numOfAnswer">(Select one answer)</span>
           </p>
-            <label for="q2-a1" class="answer">
-              <input type="checkbox" value="Breakfast" name="eat-time" id="q2-a1" >
-              <span class="laptop-screen tablet-screen">
-                When the Sun Rises
-                <span class="funny-descript">
-                  (Breakfast Time)
-                </span>
-              </span>
-              <span class="mobile-screen">
-                Breakfast Time
-              </span>
-            </label>      
-            <label for="q2-a2" class="answer">
-              <input type="checkbox" value="Brunch" name="eat-time" id="q2-a2">
-              Brunch Time
-            </label>
-            <label for="q2-a3" class="answer"> 
-              <input type="checkbox" id="q2-a3" value="Lunch" name="eat-time">
-                Lunch Time
-            </label>
-            <label for="q2-a4" class="answer">  
-              <input type="checkbox" id="q2-a4" value="Dinner" name="eat-time">              
-                Dinner Time
-            </label>
-            <label for="q2-a5" class="answer">
-              <input type="checkbox" id="q2-a5" value="Late-Night" name="eat-time">
-                Late Night
-            </label>
-            <label for="q2-a6" class="answer">
-              <input type="checkbox" name="eat-time" id="q2-a6" value="snacks-only">              
-                Snacks All Day
-            </label>
+            <label for="q2-a1" class="answer"><input type="checkbox" value="Breakfast" name="eat-time" id="q2-a1" >Breakfast Time</label>
+
+            <label for="q2-a2" class="answer"><input type="checkbox" value="Brunch" name="eat-time" id="q2-a2"> Brunch Time</label>
+
+            <label for="q2-a3" class="answer"><input type="checkbox" id="q2-a3" value="Lunch" name="eat-time"> Lunch Time </label>
+
+            <label for="q2-a4" class="answer"><input type="checkbox" id="q2-a4" value="Dinner" name="eat-time">Dinner Time</label>
+
+            <label for="q2-a5" class="answer"><input type="checkbox" id="q2-a5" value="Late-Night" name="eat-time"> Late Night</label>
+
+            <label for="q2-a6" class="answer"><input type="checkbox" name="eat-time" id="q2-a6" value="snacks-only"> Snacks All Day</label>
+            
           <p class="survey-question">
             3) What is your go to snack(s)?
             <span class="numOfAnswer">(Select up to 3  answers)</span>
@@ -292,14 +256,6 @@
             “The best comfort food will always be greens, cornbread, and fried chicken.”
             <cite>- Maya Angelou</cite>
           </p>
-          <p class="quotes tablet-screen">
-            "I am not a glutton - I am an explorer of food."
-            <cite>- Erma Bombeck</cite>
-          </p>
-          <p class="quotes mobile-screen">
-            "Food is our common ground.”
-            <cite>- James Beard</cite>
-          </p>
           <div class="quote-line2"></div>
         </div>
       </div>
@@ -426,19 +382,11 @@
             "I’m pretty sure that eating chocolate keeps wrinkles away because I have never seen a 10-year-old with a Hershey bar and crows feet.""
             <cite>- Amy Neftzger</cite>
           </p>
-          <p class="quotes tablet-screen">
-            "We all eat, and it would be a sad waste of opportunity to eat badly."
-            <cite>- Anna thomas</cite>
-          </p>
-          <p class="quotes mobile-screen">
-            "Laughter is brightest in the place where food is.”
-            <cite>- Irish Proverb</cite>
-          </p>
           <div class="quote-line1"></div>
         </div>
       </div>
       <div class="form-div">
-        <fieldset class="form-fieldset laptop-tablet-screen">
+        <fieldset class="form-fieldset">
           <p class="survey-question">
             The most IMPORTANT question on this survey.
             <span class="bonus-question">
@@ -471,8 +419,6 @@
         </fieldset>
         <input id="submit" class="submit-button" type="submit" value="Submit" />
       </div>
-      <div class="empty"></div>
     </form>
-    <div class="empty"></div>
   </body>
 </html>
